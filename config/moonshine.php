@@ -7,12 +7,12 @@ return [
     'dir' => 'app/MoonShine',
     'namespace' => 'App\MoonShine',
 
-    'title' => env('MOONSHINE_TITLE', 'MoonShine'),
-    'logo' => env('MOONSHINE_LOGO'),
+    'title' => env('MOONSHINE_TITLE', 'Reminder'),
+    'logo' => env('MOONSHINE_LOGO', '/images/logo.png'),
     'logo_small' => env('MOONSHINE_LOGO_SMALL'),
 
     'route' => [
-        'prefix' => env('MOONSHINE_ROUTE_PREFIX', 'moonshine'),
+        'prefix' => env('MOONSHINE_ROUTE_PREFIX', 'admin'),
         'index_route' => env('MOONSHINE_INDEX_ROUTE', 'moonshine.index'),
         'middleware' => ['moonshine'],
         'custom_page_slug' => 'custom_page',
